@@ -7,6 +7,7 @@ plugins {
 group = 'com.backend'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '14'
+java.runtime.version=11
 
 repositories {
 	mavenCentral()
