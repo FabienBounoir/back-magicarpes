@@ -1,0 +1,23 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: magicarpe
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 400303013952-95icov6i9qe2ut9phrd53789db9f360k.apps.googleusercontent.com
+            clientSecret: 2lxMzLFpT24kSuuqtAVAcpjL
+            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+            scope:
+              - email
+              - profile
+app:
+  auth:
+    magicarpe:
+      app:
+        jwtPassword: magicarpeSecretKey
+        jwtExpiration: 864000000
